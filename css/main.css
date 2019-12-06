@@ -1,0 +1,115 @@
+body{
+   background:rgb(230, 228, 228);
+}
+
+h1{
+    top: 25px;
+    text-align: center;
+    position: relative;
+}
+
+canvas{
+  background: white;
+}
+
+.flex_top{
+  display: flex;
+  justify-content: center;
+}
+
+.flex{
+  display: flex;
+}
+
+section{
+  background: rgb(230, 228, 228);
+  width:100%;
+  margin:0 auto;
+  /* text-align: center; */
+}
+
+.flex_side{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#drowarea{
+  margin-top: 30px;
+  width:500px;
+  height:500px;
+  cursor: crosshair;
+}
+
+.btn_area{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#bg_color{
+  width:55px;
+  padding:10px;
+  margin:0 0 6px 22px;
+}
+
+#file{
+  position: relative;
+  left:22px;
+  margin-bottom:5px;
+}
+
+#grayScale{
+  width: 95px;
+  text-align: left;
+  position: relative;
+  left: 22px;
+  margin-bottom: 5px;
+}
+
+#gallery{
+    position: relative;
+    right: -61px;
+}
+
+.btns{
+  /* margin:20px; */
+  width:20px;
+  padding:8px;
+  margin:0 0 5px 5px;
+  background:rgb(170, 91, 243);
+  color:white;
+  font-size:15px;
+  border-radius: 10px;
+  position:relative;
+  left:20px;
+  text-align: center;
+}
+
+.btn_area div:hover{
+  opacity: .8;
+}
+
+.thumbnail {
+  border: 2px solid #999;
+  margin-right: 5px;
+ }
+
+ #pen{
+  background:red;
+ }
+ #erase{
+  background:orange;
+ }
+ #back{
+  background:yellow;
+ }
+ #forth{
+  background:limegreen;
+ }
+ #clear_btn{
+  background:cyan;
+ }
+ #save{
+  background:blueviolet;
+ }

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ペイントツール</title>
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/colorjoe.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <section>
+    <h1>Drawing Pad</h1>
+    <div class="flex_top">
+      <div class="flex_side">
+      <canvas id="drowarea" width="500" height="500" style="border:4px solid brown;"></canvas>
+      <!-- 線の太さを変更するHTML要素 -->
+      線の太さ<input id="bold" type="range" name="太さ" value="5" min="1" max="9" step="1">
+      <!-- 線の透明度を変更するHTNL要素 -->
+      線の透明度<input id="alpha" type="range" name="透明度" value="1" min="0" max="1" step="0.1">
+      
+      </div>
+      <div class="flex_side">
+      <span id="color-palette"></span>
+      <div class="btn_area">
+        <select id="bg_color">
+          <option style="color:white;" selected>白</option>
+          <option style="color:pink;">ピンク</option>
+          <option style="color:skyblue;">水色</option>
+          <option style="color:lightgreen;">薄緑</option>
+          <option style="color:lightgray;">灰色</option>
+        </select>
+        <input type="file" name="file" id="file">
+        <button id = "grayScale">白黒に変換する</button>
+       
+            <div id="pen" class="btns"><i class="fas fa-pencil-alt"></i></div>
+            <div id="erase" class="btns"><i class="fas fa-eraser"></i></div>
+            <div id="back" class="btns"><i class="fas fa-backward"></i></div>
+            <div id="forth" class="btns"><i class="fas fa-forward"></i></div>
+            <div id="clear_btn" class="btns"><i class="fas fa-redo-alt"></i></div>
+            <div id="save" class="btns"><i class="fas fa-save"></i></div>
+          
+         
+        
+      </div>
+      
+      </div>
+    </div>
+    
+    <div id="gallery"></div>
+   
+    
+    
+    
+  </section>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js "></script>
+  <script src ="js/colorjoe.min.js"></script>
+  <script src ="js/main.js"></script>
+</body>
+
+</html>
